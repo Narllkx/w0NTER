@@ -91,3 +91,40 @@ $(document).click(function (e) {
     $("body").removeClass("lock");
   }
 });
+$(document).ready(function () {
+  $(".partners").slick({
+    infinite: true,
+    arrow: true,
+    autoplay: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    speed: 1500,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          slidesToShow: 7,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
